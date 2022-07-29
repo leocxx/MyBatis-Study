@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--mybatis的dtd约束-->
+<!DOCTYPE configuration PUBLIC
+        "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration 核心根标签-->
+<configuration>
+    <!--引入数据库连接配置文件-->
+    <properties resource="jdbc.properties"/>
+
+    <!--起别名-->
+    <typeAliases>
+        <typeAlias type="com.xxxxxchen.bean.Student" alias="student"/>
+        <!--<package name="com.xxxxxchen.bean"/>-->
+    </typeAliases>
+    <!--environments 配置数据库环境，可以有多个
+       default属性表示使用哪个配置
+    -->
+    <environments default="mysql">
+        <!--environment配置数据库环境 id是唯一标识-->
+        <environment id="mysql">
+            <!--transactionManager事务管理 type属性表示事务类型-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--dataSource数据源信息 type属性表示连接池-->
+            <dataSource type="POOLED">
+                <!--property 配置数据库连接的配置信息-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--引入映射配置文件-->
+    <mappers>
+        <!--mapper引入指定的配置文件 resource属性表示指定配置文件的名称-->
+        <mapper resource="StudentMapper.xml" />
+    </mappers>
+</configuration>
