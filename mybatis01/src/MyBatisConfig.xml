@@ -8,6 +8,11 @@
     <!--引入数据库连接配置文件-->
     <properties resource="jdbc.properties"/>
 
+    <!--配置LOG4J-->
+    <settings>
+        <setting name="logImpl" value="log4j"/>
+    </settings>
+
     <!--起别名-->
     <typeAliases>
         <typeAlias type="com.xxxxxchen.bean.Student" alias="student"/>
