@@ -1,6 +1,6 @@
-package com.xxxxxcehn.mapper;
+package com.xxxxxchen.mapper;
 
-import com.xxxxxcehn.bean.Student;
+import com.xxxxxchen.bean.Student;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;

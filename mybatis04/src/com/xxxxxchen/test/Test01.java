@@ -1,7 +1,7 @@
-package com.xxxxxcehn.test;
+package com.xxxxxchen.test;
 
-import com.xxxxxcehn.bean.Student;
-import com.xxxxxcehn.mapper.StudentMapper;
+import com.xxxxxchen.bean.Student;
+import com.xxxxxchen.mapper.StudentMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

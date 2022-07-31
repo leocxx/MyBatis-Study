@@ -37,7 +37,4 @@
     </environments>
 
     <!--配置映射关系-->
-    <mappers>
-        <package name="com.xxxxxchen.mapper"/>
-    </mappers>
 </configuration>

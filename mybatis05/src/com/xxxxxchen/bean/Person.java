@@ -1,17 +1,17 @@
-package com.xxxxxcehn.bean;
+package com.xxxxxchen.bean;
 
 /**
  * @author KevinWilliams
  */
-public class Student {
+public class Person {
     private Integer id;
     private String name;
     private Integer age;
 
-    public Student() {
+    public Person() {
     }
 
-    public Student(Integer id, String name, Integer age) {
+    public Person(Integer id, String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -43,7 +43,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
