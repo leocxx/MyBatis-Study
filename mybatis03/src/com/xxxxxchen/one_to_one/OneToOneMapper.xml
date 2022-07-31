@@ -3,6 +3,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="com.xxxxxchen.table01.OneToOneMapper">
     <!--配置字段和实体对象属性的映射关系-->
     <resultMap id="oneToOne" type="card">
@@ -21,6 +22,6 @@
     </resultMap>
 
     <select id="selectAll" resultMap="oneToOne">
-        SELECT c.id cid,number,pid,NAME,age FROM card c,person p WHERE c.pid=p.id;
+        SELECT c.id cid,number,pid,NAME,age FROM card c,person p WHERE c.pid=p.id
     </select>
 </mapper>

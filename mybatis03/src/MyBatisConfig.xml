@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF8" ?>
 <!--mybatis的dtd约束-->
 <!DOCTYPE configuration PUBLIC
         "-//mybatis.org//DTD Config 3.0//EN"
@@ -19,9 +19,9 @@
     </typeAliases>
     
     <!--配置分页插件-->
-    <plugins>
+   <!-- <plugins>
         <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
-    </plugins>
+    </plugins>-->
     <!--environments 配置数据库环境，可以有多个
        default属性表示使用哪个配置
     -->
@@ -45,5 +45,7 @@
     <mappers>
         <!--mapper引入指定的配置文件 resource属性表示指定配置文件的名称-->
         <mapper resource="com/xxxxxchen/one_to_one/OneToOneMapper.xml"/>
+        <mapper resource="com/xxxxxchen/one_to_many/OneToManyMapper.xml"/>
+        <mapper resource="com/xxxxxchen/many_to_many/ManyToManyMapper.xml"/>
     </mappers>
 </configuration>
